@@ -9,7 +9,7 @@ export default class MapBox {
       types="address,poi",
       country="BR"
     } = params;
-    this.key = "pk.eyJ1IjoicGVndWVmcmV0YWRvIiwiYSI6ImNqeTBuM3hkMzA0dzAzYm81dzV0bmp0am4ifQ.L5-5dMeX1DlMxPiI6J4q-A";
+    this.key = "";
     this.baseUrl = "https://api.mapbox.com/geocoding/v5/mapbox.places/";
     this.address = "";
     this.proximity = proximity;
