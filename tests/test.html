@@ -1,12 +1,21 @@
 <head>
   <title>Html for tests</title>
   <meta charset="utf-8" />
+  <link href="../src/css/autocomplete.css" rel="stylesheet" />
 </head>
+
 <body>
   <h1>teste</h1>
-  <input type='text' id='test-input' />
+  <div class="autocomplete-container">
+    <input type='text' id='home-input' />
+  </div>
+  <input hidden type='text' id='home_lat' class="home_lat" />
+  <input hidden type='text' id='home_lng' class="home_lng" />
+  <input hidden type='text' id='work_lat' class="work_lat" />
+  <input hidden type='text' id='work_lng' class="work_lng" />
   <script type="text/javascript" src="../dist/index.umd.js"></script>
   <script>
-    console.log(new NanoAutocomplete.NanoAutocomplete(document.getElementById('test-input')))
+    const autocomplete = new NanoAutocomplete(document.getElementById('home-input'));
+    console.log(autocomplete)
   </script>
 </body>
